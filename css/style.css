@@ -435,6 +435,14 @@ li a b {
 footer input{
     font-weight:bold;
 }
+
+#defaultText{
+  display:block;
+}
+
+#success{
+  display: none;
+}
 @media screen and (max-width:768px){
     .image{
         position: relative;

@@ -52,8 +52,8 @@
                    
                    
                     <ul class=" show_main secondnav nav navbar-nav navbar-right" style="background-color:white" >
-                      <li><a href="#"><b>About SLC</b> </a></li>
-                      <li><a href="#"><b>Testimonials</b></a></li>
+                      <li><a href="#about"><b>About SLC</b> </a></li>
+                      <li><a href="#testimonial"><b>Testimonials</b></a></li>
                       <li><a href="#"><b>Contact Us</b></a></li>
                       <li class="button"><a href="#"><b style="color:white">Register for SLC</b></a></li>
                       <!-- <li class="timer"><a href="#" id="demo" style="color:#E28168; " >   </a></li> -->
@@ -112,7 +112,7 @@
                                  <div class="col-sm-8">
                                     <div class="herotext">
                                         <h1>Animate</h1>
-                                    <p>Create the glorifying presence of the Lord with the help of the Holy Spirit.
+                                    <p>Host the glorifying presence of the Lord with the help of the Holy Spirit.
                                     </div>
                                     </p>
                                  </div>
@@ -132,7 +132,7 @@
                              <div class="col-sm-2"></div>
                              <div class="col-sm-8">
                                 <div class="herotext">
-                                    <h1>Revilalize</h1>
+                                    <h1>Revitilalize</h1>
                                 <p>Restore energy and get set up to do greater things and make bigger things happen for God’s kingdom on Earth.
 
                                 </div>
@@ -183,9 +183,9 @@
           </div>
 
 
+          <!-- <div id="about" ></div> -->
 
-
-           <div class="about show_main">
+           <div class="about show_main" id="about">
                 <div class="row">
                     <div class="col-sm-7">
                       <div class="highlight">
@@ -319,7 +319,7 @@
                 </div>
             </div>
 
-            <div class="testimonial show_main ">
+            <div class="testimonial show_main " id="testimonial">
                 <div class="text-center">
                     <h4>Testimonials</h4>
                     <h2>Transforming Lives</h2>
@@ -517,35 +517,38 @@
                         <div class="col-sm-6">
                             <div class="major">
                                 <h1 class="text-center">SLC Registration</h1>
+                               <center> <p id="defaultText">We would love to prepare for your coming by reserving a seat for you!</p>
+                                
+                              </center>
                                 <center><p class="line2"></p></center>
-                                <form class="major">
+                                <form id="submitForms" class="major">
                                     <div class="form-">
-                                      <input type="text" class="input form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Full name"><br>
+                                      <input type="text" class="input form-control" id="fullname" aria-describedby="emailHelp" required placeholder="Full name"><br>
                                     </div>
                                     <div class="form-">
-                                        <input type="email" class="input form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email address"><br>
+                                        <input type="email" class="input form-control" id="email" aria-describedby="emailHelp" required placeholder="Email address"><br>
                                       </div>
                                       <div class="form-">
-                                        <input type="text" class="input form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Address"><br>
+                                        <input type="text" class="input form-control" id="address" aria-describedby="emailHelp" required placeholder="Address"><br>
                                       </div>
                                       <div class="form-">
-                                        <input type="phone" class="input form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Phone Number"><br>
+                                        <input type="phone" class="input form-control" id="phonenumber" aria-describedby="emailHelp" required placeholder="Phone Number"><br>
                                       </div>
 
                                       <div class="row">
                                           <div class="col-sm-6">
-                                            <input type="text" class="input form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="City"><br>
+                                            <input type="text" class="input form-control" id="city" aria-describedby="emailHelp" required placeholder="City"><br>
                                           </div>
                                           <div class="col-sm-6">
-                                            <input type="text" class="input form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="State">
+                                            <input type="text" class="input form-control" id="state" aria-describedby="emailHelp" required placeholder="State">
                                           </div>
                                       </div>
 
                                       <div class="form-">
                                         <br>
                                         <span>Not an Akure based , would you like to book an accomodation ?</span>
-                                        <label class="radio-inline"><input type="radio" name="optradio" checked>Yes</label>
-                                        <label class="radio-inline"><input type="radio" name="optradio">No</label>
+                                        <label class="radio-inline"><input type="radio" name="optradio" value="yes" checked>Yes</label>
+                                        <label class="radio-inline"><input type="radio" name="optradio" value="no">No</label>
                                         
                                       </div>
                                     
@@ -558,6 +561,31 @@
                         <div class="col-sm-3"></div>
                     </div>
                 </div><br>
+
+
+                <!-- Button trigger modal -->
+
+
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content"  style="padding: 20px 10px 40px 10px">
+                      <center>
+                        <br>
+                        <img src="/img/congrats.png" width="40%">
+                        <div class="text-center">
+                          <h3>Congratulations</h3>
+                          <p style="padding:3%; line-height: 30px;">
+                            You have successfully registered for Spirit Life Convention 2021.<br> A special seat with your name on it has been reserved! We would ensure to send you reminder emails ahead of the meeting! <br> Pray, prepare, plan to attend, invite everyone and come full of expectations. Looking forward to seeing you there!
+                          </p>
+                        </div>
+                       
+                      </center>
+                      </div>
+                     
+                    </div>
+                  </div>
+                </div>
 
 
 
@@ -728,7 +756,7 @@
 
         <script>
                 function getTimeRemaining(endtime) {
-                const total = Date.parse(endtime) - Date.parse(new Date());
+                const total = new Date('November 5, 2021 05:00:00') - Date.now();
                 const seconds = Math.floor((total / 1000) % 60);
                 const minutes = Math.floor((total / 1000 / 60) % 60);
                 const hours = Math.floor((total / (1000 * 60 * 60)) % 24);
@@ -777,8 +805,28 @@
 
             </script>
 
+            <script src="https://www.gstatic.com/firebasejs/6.4.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.4.0/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.4.0/firebase-firestore.js"></script>
+        <script src="/js/config.js" ></script>
+        <script src="/js/form.js" ></script>
+
+            
+
+            <script>
+           // Import the functions you need from the SDKs you need
+           
+        
 
 
+
+
+          </script>
+
+
+              <script>
+                
+              </script>
 
 
     </body>
