@@ -12,7 +12,7 @@ function generalOutput(collectionName, limit) {
                                         
                                 <tr>
                                    
-                                    <th scope="row">${guide.fullname}</th>
+                                    <td scope="row">${guide.fullname}</td>
                                     <td>${guide.email}</td>
                                     <td>${guide.phonenumber}</td>
                                     <td>${guide.address}</td>
