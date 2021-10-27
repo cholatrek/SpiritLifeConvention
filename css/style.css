@@ -443,6 +443,10 @@ footer input{
 #success{
   display: none;
 }
+
+.loader{
+  display: none;
+}
 @media screen and (max-width:768px){
     .image{
         position: relative;

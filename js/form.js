@@ -1,5 +1,6 @@
 
-var submitForm =  document.getElementById('submitForms')
+var submitForm =  document.getElementById('submitForms');
+var loader = document.getElementById('loader');
 
 submitForm.addEventListener('submit', submitSlc );
 
@@ -11,8 +12,7 @@ function submitSlc(e){
     var phonenumber = getInputval('phonenumber');
     var city = getInputval('city');
     var state = getInputval('state');
-
-
+    loader.style.display = 'block'
 
     // console.log(fullname)
 
