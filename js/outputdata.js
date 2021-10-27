@@ -2,14 +2,16 @@ function generalOutput(collectionName, limit) {
     db.collection(collectionName).limit(limit).get().then((snapshot) => {
         let html = '';
         const formlist = document.getElementById("formlist");
+        const formCounter = document.getElementById("formCounter");
         snapshot.docs.forEach(doc => {
             const guide = doc.data();
             console.log(guide);
+            // console.log(snapshot.size)
 
             const content = `
                                         
                                 <tr>
-                                    <td>${guide.length}</td>
+                                   
                                     <th scope="row">${guide.fullname}</th>
                                     <td>${guide.email}</td>
                                     <td>${guide.phonenumber}</td>
@@ -29,6 +31,7 @@ function generalOutput(collectionName, limit) {
         });
 
         formData.innerHTML = html;
+        formCounter.innerHTML = snapshot.size;
 
     });
 }
